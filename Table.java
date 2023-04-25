@@ -12,7 +12,7 @@ public class Table {
         occupied = false;
     }
   //adds an order to table
-    public void addOrder(order newOrder){
+    public void addOrder(order newOrder) {
         tableOrder = newOrder;
     }
   //returns the table order
