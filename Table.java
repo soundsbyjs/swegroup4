@@ -19,6 +19,10 @@ public class Table {
     public order getOrder() {
         return tableOrder;
     }
+  //returns the table number
+    public int getTableNum() {
+        return tableNum;
+    }
   //sets the table status to clean
     public void setClean(String item) {
         clean = true;
