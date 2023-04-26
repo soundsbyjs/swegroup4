@@ -36,10 +36,12 @@ public class Menu {
             fr = new FileReader(fileName);
             ///creating a File object and a Scanner object
             do{
+                lineNum++;
                 String line = scanMenu.nextLine();
                 if(currentCate == null)
                 {
                     currentCate = line;
+                    lineNum = 0;
                 }
                 else {
                     switch(lineNum % 4)
@@ -54,7 +56,6 @@ public class Menu {
                             newItemList.add(new Item(currentName,currentCost,currentDesc,currentCate));
                     }
                 }
-                lineNum++;
             } while(scanMenu.hasNextLine());
             fr.close();
         }
