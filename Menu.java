@@ -15,6 +15,10 @@ public class Menu {
         File menuJFavorites = new File("Menu_JFavorites.txt");
         File menuBurgers = new File("Menu_Burgers.txt");
         menuItems.add(scanMenu(menuAppetizers));
+        menuItems.add(scanMenu(menuSalads));
+        menuItems.add(scanMenu(menuEntrees));
+        menuItems.add(scanMenu(menuJFavorites));
+        menuItems.add(scanMenu(menuBurgers));
     }
     public List<Item> scanMenu(File fileName)
     {
