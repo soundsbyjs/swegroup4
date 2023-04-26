@@ -14,17 +14,17 @@ public class Menu {
         File menuEntrees = new File("Menu_Entrees.txt");
         File menuJFavorites = new File("Menu_JFavorites.txt");
         File menuBurgers = new File("Menu_Burgers.txt");
-        menuItems.add(scanMenu(menuAppetizers));
-        menuItems.add(scanMenu(menuSalads));
-        menuItems.add(scanMenu(menuEntrees));
-        menuItems.add(scanMenu(menuJFavorites));
-        menuItems.add(scanMenu(menuBurgers));
+        menuItems.add(scanMenu(menuAppetizers,"Appetizers"));
+        menuItems.add(scanMenu(menuSalads,"Salads"));
+        menuItems.add(scanMenu(menuEntrees,"Entrees"));
+        menuItems.add(scanMenu(menuJFavorites,"J's Favorites"));
+        menuItems.add(scanMenu(menuBurgers,"Burgers"));
     }
-    public List<Item> scanMenu(File fileName)
+    public List<Item> scanMenu(File fileName, String newCate)
     {
         FileReader fr;
         ///creating a Reader object
-        String currentCate = null;
+        String currentCate = newCate;
         String currentName = null;
         Float currentCost = null;
         String currentDesc = null;
@@ -34,16 +34,11 @@ public class Menu {
         try {
             Scanner scanMenu = new Scanner(fileName);
             fr = new FileReader(fileName);
+
             ///creating a File object and a Scanner object
             do{
                 lineNum++;
                 String line = scanMenu.nextLine();
-                if(currentCate == null)
-                {
-                    currentCate = line;
-                    lineNum = 0;
-                }
-                else {
                     switch(lineNum % 4)
                     {
                         case 1:
@@ -55,7 +50,6 @@ public class Menu {
                         case 0:
                             newItemList.add(new Item(currentName,currentCost,currentDesc,currentCate));
                     }
-                }
             } while(scanMenu.hasNextLine());
             fr.close();
         }
