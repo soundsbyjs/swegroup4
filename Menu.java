@@ -6,56 +6,49 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
-    protected ArrayList<List<Item>> menuItems;
+    protected ArrayList<List<Item>> menuItems = new ArrayList<>();
+    protected List<Item> appetizersList = new ArrayList<>();
+    protected List<Item> saladsList = new ArrayList<>();
+    protected List<Item> entreesList = new ArrayList<>();
+    protected List<Item> jFavoritesList = new ArrayList<>();
+    protected List<Item> burgersList = new ArrayList<>();
     public Menu()
     {
-        File menuAppetizers = new File("Menu_Appetizers.txt");
-        File menuSalads = new File("Menu_Salads.txt");
-        File menuEntrees = new File("Menu_Entrees.txt");
-        File menuJFavorites = new File("Menu_JFavorites.txt");
-        File menuBurgers = new File("Menu_Burgers.txt");
-        menuItems.add(scanMenu(menuAppetizers,"Appetizers"));
-        menuItems.add(scanMenu(menuSalads,"Salads"));
-        menuItems.add(scanMenu(menuEntrees,"Entrees"));
-        menuItems.add(scanMenu(menuJFavorites,"J's Favorites"));
-        menuItems.add(scanMenu(menuBurgers,"Burgers"));
-    }
-    public List<Item> scanMenu(File fileName, String newCate)
-    {
+        menuItems.add(appetizersList);
+        menuItems.add(saladsList);
+        menuItems.add(entreesList);
+        menuItems.add(jFavoritesList);
+        menuItems.add(burgersList);
         FileReader fr;
-        ///creating a Reader object
-        String currentCate = newCate;
-        String currentName = null;
-        Float currentCost = null;
-        String currentDesc = null;
-        int lineNum = 0;
-        List<Item> newItemList = new ArrayList<Item>();
-        ///creating variables to aid with the scanning process
+        ///creates a Reader object
         try {
-            Scanner scanMenu = new Scanner(fileName);
-            fr = new FileReader(fileName);
-
-            ///creating a File object and a Scanner object
+            File menuList = new File("Menu.txt");
+            Scanner scanMenu = new Scanner(menuList);
+            fr = new FileReader(menuList);
+            ///creates a File object and a Scanner object
             do{
-                lineNum++;
                 String line = scanMenu.nextLine();
-                    switch(lineNum % 4)
-                    {
-                        case 1:
-                            currentName = line;
-                        case 2:
-                            currentCost = Float.parseFloat(line);
-                        case 3:
-                            currentDesc = line;
-                        case 0:
-                            newItemList.add(new Item(currentName,currentCost,currentDesc,currentCate));
-                    }
+                String[] substrings = line.split(":");
+                switch(substrings[3])
+                {
+                    case "Appetizers":
+                        appetizersList.add(new Item(substrings[0],Float.parseFloat(substrings[1]),substrings[2],substrings[3]));
+                    case "Salads":
+                        saladsList.add(new Item(substrings[0],Float.parseFloat(substrings[1]),substrings[2],substrings[3]));
+                    case "Entrees":
+                        entreesList.add(new Item(substrings[0],Float.parseFloat(substrings[1]),substrings[2],substrings[3]));
+                    case "J's Favorites":
+                        jFavoritesList.add(new Item(substrings[0],Float.parseFloat(substrings[1]),substrings[2],substrings[3]));
+                    case "Burgers":
+                        burgersList.add(new Item(substrings[0],Float.parseFloat(substrings[1]),substrings[2],substrings[3]));
+                }
+                ///splits each line into 4 different strings, all of which are used to create a new Item.
+                ///this item is stored in one of the Lists depending on substrings[3] (the category)
             } while(scanMenu.hasNextLine());
             fr.close();
         }
         catch(IOException ioex) {
             System.out.println ("Error: " + ioex.getMessage());
         }
-        return newItemList;
     }
 }

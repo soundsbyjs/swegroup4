@@ -1,0 +1,26 @@
+Chips & Dip:8.00:Salsa, Queso or Guacamole (Pick 2):Appetizers
+Chicken Nachos:8.50:Pulled chicken, spicy white cheese sauce, & cheddar cheese topped with red onions & cilantro. Add BBQ sauce (+0.50):Appetizers
+Pork Nachos:8.50:Pulled pork, spicy white cheese sauce, & pepper jack cheese topped with tomato, Scallions & cilantro, Add BBQ sauce (+0.50):Appetizers
+Fried Veggies:6.50:Choice of okra, zucchini, squash or Mix & Match. Served with a side of spicy ranch:Appetizers
+Fried Cheese:7.50:Choice of mac & cheese bites, pimento cheese or mozzarella cheese:Appetizers
+Cheesestick Trio:14.00:mac & cheese bites, pimento cheese and mozzarella cheese:Appetizers
+House Salad:7.50:Mixed Greens, topped with bacon, tomato & blue cheese crumbles:Salads
+Wedge Salad:7.50:Iceberg lettuce wedge topped with bacon, tomato & blue cheese crumbles:Salads
+Caesar Salad:7.50:Romaine lettuce, shredded Parmesan cheese & croutons tossed in caesar dressing.:Salads
+Sweet Potato Chicken Salad:11.50:Mixed greens, red onion, dried cranberries & goat cheese crumbles topped with chilled sweet potato crusted chicken.:Salads
+Shrimp & Grits:13.50:Sautéed shrimp with garlic served on top of Adluh cheese grits, topped with sautéed peppers & onions:Entrees
+Sweet Tea Fried Chicken:11.50:Fried chicken breast marinated in sweet tea & spices, topped with a sweet tea reduction:Entrees
+Caribbean Chicken:11.50:Grilled chicken marinated in spicy Caribbean seasoning topped with mango salsa & avocado:Entrees
+Grilled Pork Chops*:11.00:Two bone-in grilled pork chops:Entrees
+120z New York Strip Steak*:17.00:New York Strip Steak cut in-house. Cooked to your desired temperature:Entrees
+Seared Tuna*:15.00:Seared ahi tuna cooked to your desired temperature, topped with mango salsa & a honey lime vinaigrette drizzle:Entrees
+Captain Crunch Chicken Tenders:11.50:Fried chicken tenders coated in Captain Crunch with a dipping sauce.:J's Favorites
+Shock Top Grouper Fingers:11.50:Shock Top beer-battered grouper served with tartar sauce & a lemon extra.:J's Favorites
+Mac & Cheese Bar:8.50:Cast iron skillet of mac & cheese with choice of regular cheese or spicy cheese & choice of two toppings. Additional toppings & protein extra.:J's Favorites
+Chicken BLT&A:10.00:Grilled chicken, bacon, lettuce, tomato & avocado on a pretzel bun:J's Favorites
+J’s Burger:10.00:8-ounce burger on a brioche bun Add cheese (+0.50):Burgers
+Bacon Cheeseburger:11.00:8-ounce burger topped with bacon & your choice of cheddar, American, Swiss, provolone, pepper jack, blue cheese or pimento cheese on a brioche bun:Burgers
+Mushroom Swiss Burger:11.00:8-ounce burger topped with sautéed mushrooms & Swiss cheese on a brioche bun:Burgers
+Carolina Burger:11.00:8-ounce burger topped with chili, diced onions & slaw on a brioche bun. Lettuce tomato & onion by request:Burgers
+Portobello Burger (V):8.50:Marinated Portobello mushroom cap topped with mango salsa, lettuce, tomato & onion on a telera bun:Burgers
+Vegan Boca Burger (V):10.50:Vegan Boca Burger topped with lettuce, tomato & onion on a telera bun:Burgers
